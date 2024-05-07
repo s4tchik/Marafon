@@ -1,5 +1,4 @@
-﻿using Marafon.ClassHelper;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,34 +13,34 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Marafon.Pages.Moreabouttheevent
+namespace Marafon.Pages.Admin
 {
     /// <summary>
-    /// Логика взаимодействия для MBRPage.xaml
+    /// Логика взаимодействия для PageUsers.xaml
     /// </summary>
-    public partial class MBRPage : Page
+    public partial class PageUsers : Page
     {
-        public MBRPage()
+        public PageUsers()
         {
             InitializeComponent();
         }
 
-        private void btn_calc_Click(object sender, RoutedEventArgs e)
+        private void btnClear_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void btn_cancel_Click(object sender, RoutedEventArgs e)
-        {
-            FrameApp.frmObj.GoBack();
-        }
-
-        private void btnMale_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void btnFemale_Click(object sender, RoutedEventArgs e)
+        private void btnUser_Copy_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnAddUser_Click(object sender, RoutedEventArgs e)
         {
 
         }

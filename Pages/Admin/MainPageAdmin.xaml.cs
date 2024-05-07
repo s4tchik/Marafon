@@ -14,34 +14,34 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Marafon.Pages.Moreabouttheevent
+namespace Marafon.Pages.Admin
 {
     /// <summary>
-    /// Логика взаимодействия для MBRPage.xaml
+    /// Логика взаимодействия для MainPageAdmin.xaml
     /// </summary>
-    public partial class MBRPage : Page
+    public partial class MainPageAdmin : Page
     {
-        public MBRPage()
+        public MainPageAdmin()
         {
             InitializeComponent();
         }
 
-        private void btn_calc_Click(object sender, RoutedEventArgs e)
+        private void btnFund_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void btn_cancel_Click(object sender, RoutedEventArgs e)
+        private void btnUser_Click(object sender, RoutedEventArgs e)
         {
-            FrameApp.frmObj.GoBack();
+            FrameApp.frmObj.Navigate(new PageUsers());
         }
 
-        private void btnMale_Click(object sender, RoutedEventArgs e)
+        private void btnValunteer_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void btnFemale_Click(object sender, RoutedEventArgs e)
+        private void btnInventory_Click(object sender, RoutedEventArgs e)
         {
 
         }

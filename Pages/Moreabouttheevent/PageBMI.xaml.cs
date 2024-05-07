@@ -35,5 +35,25 @@ namespace Marafon.Pages.Moreabouttheevent
         {
             FrameApp.frmObj.GoBack();
         }
+
+        private void txbHeight_GotFocus(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void txbWeight_GotFocus(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnMale_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnFemale_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
