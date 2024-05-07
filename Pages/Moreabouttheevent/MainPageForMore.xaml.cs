@@ -48,12 +48,12 @@ namespace Marafon.Pages.Moreabouttheevent
 
         private void btn_bmicalc_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameApp.frmObj.Navigate(new PAgeBMI());
         }
 
         private void btn_bmrcalc_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameApp.frmObj.Navigate(new MBRPage());
         }
     }
 }

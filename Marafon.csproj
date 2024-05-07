@@ -108,6 +108,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Moreabouttheevent\MBRPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Moreabouttheevent\PageBMI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Moreabouttheevent\PageList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -172,6 +180,12 @@
     <Compile Include="Pages\Moreabouttheevent\MainPageForMore.xaml.cs">
       <DependentUpon>MainPageForMore.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Moreabouttheevent\MBRPage.xaml.cs">
+      <DependentUpon>MBRPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Moreabouttheevent\PageBMI.xaml.cs">
+      <DependentUpon>PageBMI.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Moreabouttheevent\PageList.xaml.cs">
       <DependentUpon>PageList.xaml</DependentUpon>
     </Compile>
@@ -221,7 +235,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\bmi-healthy-icon.png" />
+    <Resource Include="Images\bmi-obese-icon.png" />
+    <Resource Include="Images\bmi-overweight-icon.png" />
+    <Resource Include="Images\bmi-underweight-icon.png" />
+    <Resource Include="Images\female-icon.png" />
+    <Resource Include="Images\male-icon.png" />
+    <Resource Include="Images\map-icon-drinks.png" />
+    <Resource Include="Images\map-icon-energy-bars.png" />
+    <Resource Include="Images\map-icon-information.png" />
+    <Resource Include="Images\map-icon-medical.png" />
+    <Resource Include="Images\map-icon-start.png" />
+    <Resource Include="Images\map-icon-toilets.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\foto.png" />
   </ItemGroup>
