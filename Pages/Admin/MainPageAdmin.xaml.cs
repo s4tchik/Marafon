@@ -28,7 +28,7 @@ namespace Marafon.Pages.Admin
 
         private void btnFund_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameApp.frmObj.Navigate(new PageManagementOrganizations());
         }
 
         private void btnUser_Click(object sender, RoutedEventArgs e)
@@ -38,7 +38,7 @@ namespace Marafon.Pages.Admin
 
         private void btnValunteer_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameApp.frmObj.Navigate(new PageVolonter());
         }
 
         private void btnInventory_Click(object sender, RoutedEventArgs e)

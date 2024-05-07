@@ -72,7 +72,31 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Admin\PageAddOrEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Admin\PageInvntory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Admin\PageManagementOrganizations.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Admin\PageManagingVolunteers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Admin\PageUsers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Admin\PageUsersAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Admin\PageVolonter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -161,8 +185,26 @@
     <Compile Include="Pages\Admin\MainPageAdmin.xaml.cs">
       <DependentUpon>MainPageAdmin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Admin\PageAddOrEdit.xaml.cs">
+      <DependentUpon>PageAddOrEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\PageInvntory.xaml.cs">
+      <DependentUpon>PageInvntory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\PageManagementOrganizations.xaml.cs">
+      <DependentUpon>PageManagementOrganizations.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\PageManagingVolunteers.xaml.cs">
+      <DependentUpon>PageManagingVolunteers.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Admin\PageUsers.xaml.cs">
       <DependentUpon>PageUsers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\PageUsersAdd.xaml.cs">
+      <DependentUpon>PageUsersAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\PageVolonter.xaml.cs">
+      <DependentUpon>PageVolonter.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\MenuRunner\MainRunner.xaml.cs">
       <DependentUpon>MainRunner.xaml</DependentUpon>
