@@ -42,7 +42,7 @@
         <TextBlock Grid.Column="2" Margin="4,2,5,0" Grid.Row="4" TextWrapping="Wrap" Text="Дистанция" FontSize="18" TextAlignment="Right"/>
         <TextBlock Grid.Column="2" Margin="4,2,5,0" Grid.Row="5" TextWrapping="Wrap" FontSize="18" TextAlignment="Right"><Run Text="Сортировать"/><Run Text=":"/></TextBlock>
         <Button x:Name="btnUserUpdate" Content="Обновить" Margin="4.486,2,39.027,1" Background="#FFF2F2F2" FontFamily="Arial" 
-                FontSize="18" Foreground="Black"  Grid.Row="5" Grid.Column="4" Click="btnUserUpdate_Click" Grid.ColumnSpan="3" >
+                FontSize="18" Foreground="Black"  Grid.Row="5" Grid.Column="4" Click="btnUserUpdate_Click_1" Grid.ColumnSpan="3" >
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5"/>

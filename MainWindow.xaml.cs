@@ -27,6 +27,8 @@ namespace Marafon
             InitializeComponent();
             FrameApp.frmObj = mainFrame;
             mainFrame.Navigate(new PageMain());
+
+            OdbConectHelper.dbobj = new DataBaseEntities();
         }
 
         private void btn_back_Click(object sender, RoutedEventArgs e)

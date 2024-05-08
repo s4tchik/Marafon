@@ -24,11 +24,36 @@ namespace Marafon.Pages.Runner
         public NewRunner()
         {
             InitializeComponent();
+
+            cmbCountry.DisplayMemberPath = "CountryName";
+            cmbCountry.SelectedValuePath = "CountryCode";
+            cmbCountry.ItemsSource = OdbConectHelper.dbobj.Countries.ToList();
+
+            cmb_gender.DisplayMemberPath = "Gender1";
+            cmb_gender.SelectedValuePath = "Id";
+            cmb_gender.ItemsSource = OdbConectHelper.dbobj.Genders.ToList();
         }
 
         private void btn_Reg_Click(object sender, RoutedEventArgs e)
         {
+            string email = txb_email.Text;
 
+            if (txb_pass.Text == txb_repeatpass.Text)
+            { string pass = txb_pass.Text; }
+            else
+            {
+                MessageBox.Show("Пароли не совпадают",
+                        "Уведомление",
+                         MessageBoxButton.OK,
+                         MessageBoxImage.Warning);
+            }
+
+            string name = txb_name.Text;
+            string surname = txb_surname.Text;
+            string selectgender = (string)cmb_gender.SelectedItem;
+            string photo = txb_pathphoto.Text;
+            DateTime? selectedDate = dateBirth.SelectedDate;
+            string selectcountry = (string)cmbCountry.SelectedItem;
         }
 
         private void btn_cancel_Click(object sender, RoutedEventArgs e)

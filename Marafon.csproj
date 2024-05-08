@@ -35,8 +35,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -63,7 +72,83 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ClassHelper\Charity.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\Country.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\Event.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\EventType.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
     <Compile Include="ClassHelper\FrameApp.cs" />
+    <Compile Include="ClassHelper\Gender.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\Marathon.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\ModelForDataBase.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelForDataBase.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\ModelForDataBase.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\ModelForDataBase.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelForDataBase.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\OdbConectHelper.cs" />
+    <Compile Include="ClassHelper\Position.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\RaceKitOption.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\Registration.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\RegistrationEvent.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\RegistrationStatu.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\Role.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\Runner.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\Sponsorship.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\sp_helpdiagrams_Result.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\Staff.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\sysdiagram.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\User.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\Volunteer.cs">
+      <DependentUpon>ModelForDataBase.tt</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -318,6 +403,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EntityDeploy Include="ClassHelper\ModelForDataBase.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelForDataBase.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ClassHelper\ModelForDataBase.edmx.diagram">
+      <DependentUpon>ModelForDataBase.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -345,6 +438,21 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClassHelper\ModelForDataBase.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModelForDataBase.Context.cs</LastGenOutput>
+      <DependentUpon>ModelForDataBase.edmx</DependentUpon>
+    </Content>
+    <Content Include="ClassHelper\ModelForDataBase.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelForDataBase.edmx</DependentUpon>
+      <LastGenOutput>ModelForDataBase.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

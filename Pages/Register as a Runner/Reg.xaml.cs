@@ -34,7 +34,7 @@ namespace Marafon.Pages.Runner
 
         private void btn_oldrunner_Click(object sender, RoutedEventArgs e)
         {
-            FrameApp.frmObj.Navigate(new MainRunner());
+            FrameApp.frmObj.Navigate(new PageLogin());
         }
 
         private void btn_Login_Click(object sender, RoutedEventArgs e)

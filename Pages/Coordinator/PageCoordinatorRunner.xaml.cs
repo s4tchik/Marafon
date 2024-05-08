@@ -39,5 +39,20 @@ namespace Marafon.Pages.Coordinator
         {
 
         }
+
+        private void btnEmail_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnUserUpdate_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
