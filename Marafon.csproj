@@ -100,6 +100,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Coordinator\MainPageCoordinator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Coordinator\PageCoordinatorRunner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Coordinator\PageCoordinatorSponsor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\MenuRunner\MainRunner.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -148,7 +160,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Moreabouttheevent\PageForMarthonSkills.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Moreabouttheevent\PageList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Moreabouttheevent\PageWithMap.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -206,6 +226,15 @@
     <Compile Include="Pages\Admin\PageVolonter.xaml.cs">
       <DependentUpon>PageVolonter.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Coordinator\MainPageCoordinator.xaml.cs">
+      <DependentUpon>MainPageCoordinator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Coordinator\PageCoordinatorRunner.xaml.cs">
+      <DependentUpon>PageCoordinatorRunner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Coordinator\PageCoordinatorSponsor.xaml.cs">
+      <DependentUpon>PageCoordinatorSponsor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MenuRunner\MainRunner.xaml.cs">
       <DependentUpon>MainRunner.xaml</DependentUpon>
     </Compile>
@@ -242,8 +271,14 @@
     <Compile Include="Pages\Moreabouttheevent\PageBMI.xaml.cs">
       <DependentUpon>PageBMI.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Moreabouttheevent\PageForMarthonSkills.xaml.cs">
+      <DependentUpon>PageForMarthonSkills.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Moreabouttheevent\PageList.xaml.cs">
       <DependentUpon>PageList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Moreabouttheevent\PageWithMap.xaml.cs">
+      <DependentUpon>PageWithMap.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageLogin.xaml.cs">
       <DependentUpon>PageLogin.xaml</DependentUpon>
@@ -307,6 +342,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\foto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Map.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

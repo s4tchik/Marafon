@@ -41,6 +41,5 @@
             </Button.Resources>
         </Button>
         <Frame Name="mainFrame" NavigationUIVisibility="Hidden" Content="" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
-
     </Grid>
 </Window>

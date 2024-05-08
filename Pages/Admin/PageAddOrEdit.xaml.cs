@@ -40,5 +40,15 @@ namespace Marafon.Pages.Admin
         {
 
         }
+
+        private void txbDisc_GotFocus(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void txbName_GotFocus(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
