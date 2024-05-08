@@ -40,15 +40,16 @@ namespace Marafon.Pages.Runners
 
             string name = txb_name.Text;
             string surname = txb_surname.Text;
-            string selectgender = (string)cmb_gender.SelectedItem;
+            //string selectgender = (string)cmb_gender.SelectedItem;
             string photo = txb_pathphoto.Text;
             DateTime? selectedDate = dateBirth.SelectedDate;
-            string selectcountry = (string)cmbCountry.SelectedItem;
+            //string selectcountry = (string)cmbCountry.SelectedItem;
 
             Runner runner = new Runner
             {
-                Gender = selectgender,
+                //Gender = selectgender,
                 DateOfBirth = selectedDate
+                //CountryCode = selectcountry
             };
 
             if (txb_pass.Text == txb_repeatpass.Text)
@@ -61,6 +62,12 @@ namespace Marafon.Pages.Runners
                     FirstName = name,
                     LastName = surname
                 };
+                OdbConectHelper.dbobj.Users.Add(user);
+                OdbConectHelper.dbobj.Runners.Add(runner);
+                MessageBox.Show("Пароли совпадают",
+                        "Уведомление",
+                         MessageBoxButton.OK,
+                         MessageBoxImage.Warning);
             }
             else
             {
