@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Marafon.Pages.Runner;
+using Marafon.Pages.Runners;
 using Marafon.Pages.Admin;
 using Marafon.Pages.Coordinator;
 using Marafon.Pages.MenuRunner;

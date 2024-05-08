@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Marafon.Pages.Runner
+namespace Marafon.Pages.Runners
 {
     /// <summary>
     /// Логика взаимодействия для Reg.xaml

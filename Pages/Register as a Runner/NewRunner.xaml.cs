@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Marafon.Pages.Runner
+namespace Marafon.Pages.Runners
 {
     /// <summary>
     /// Логика взаимодействия для NewRunner.xaml
@@ -38,8 +38,31 @@ namespace Marafon.Pages.Runner
         {
             string email = txb_email.Text;
 
+            string name = txb_name.Text;
+            string surname = txb_surname.Text;
+            string selectgender = (string)cmb_gender.SelectedItem;
+            string photo = txb_pathphoto.Text;
+            DateTime? selectedDate = dateBirth.SelectedDate;
+            string selectcountry = (string)cmbCountry.SelectedItem;
+
+            Runner runner = new Runner
+            {
+                Gender = selectgender,
+                DateOfBirth = selectedDate
+            };
+
             if (txb_pass.Text == txb_repeatpass.Text)
-            { string pass = txb_pass.Text; }
+            {
+                string pass = txb_pass.Text;
+                User user = new User
+                {
+                    Email = email,
+                    Password = pass,
+                    FirstName = name,
+                    LastName = surname,
+                    Role = 1
+                };
+            }
             else
             {
                 MessageBox.Show("Пароли не совпадают",
@@ -48,12 +71,6 @@ namespace Marafon.Pages.Runner
                          MessageBoxImage.Warning);
             }
 
-            string name = txb_name.Text;
-            string surname = txb_surname.Text;
-            string selectgender = (string)cmb_gender.SelectedItem;
-            string photo = txb_pathphoto.Text;
-            DateTime? selectedDate = dateBirth.SelectedDate;
-            string selectcountry = (string)cmbCountry.SelectedItem;
         }
 
         private void btn_cancel_Click(object sender, RoutedEventArgs e)
