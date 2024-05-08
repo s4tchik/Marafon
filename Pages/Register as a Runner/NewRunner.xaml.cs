@@ -59,8 +59,7 @@ namespace Marafon.Pages.Runners
                     Email = email,
                     Password = pass,
                     FirstName = name,
-                    LastName = surname,
-                    Role = 1
+                    LastName = surname
                 };
             }
             else
