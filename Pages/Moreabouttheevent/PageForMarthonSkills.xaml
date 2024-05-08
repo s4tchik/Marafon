@@ -41,6 +41,6 @@
         </Grid>
         <Button Name="btnMap" Click="btnMap_Click" Grid.Row="3" Grid.Column="1"  Grid.RowSpan="6" Grid.ColumnSpan="2" Width="178" Height="148" Content="Карта марафона" FontSize="17"  Foreground="#FF474747">
         </Button>
-        <TextBlock HorizontalAlignment="Left" Grid.Column="4" Grid.Row="3" Grid.ColumnSpan="5" Grid.RowSpan="3" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="14" Width="339" TextAlignment="Center" Foreground="#FF6C6C6C" Height="61"><Run Text="Это - список все"/><Run Text="х благотворительных учреждений, которые поддерживаются в "/><Run Text="Marathon Skills 2016. "/><Run Text="Спасибо за помощь вы поддерживаете их, спонсируя бегунов!"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Grid.Column="4" Grid.Row="3" Grid.ColumnSpan="5" Grid.RowSpan="3" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="14" Width="339" TextAlignment="Center" Foreground="#FF6C6C6C" Height="61"><Run Text="Информация о Навыках Марафона 2016 пойдет "/><Run Text="сюда. Информация может покрыть расположение, "/><Run Text="время, расстояние, рекордные времена, "/><Run Text="достопримечательности, и т.д."/></TextBlock>
     </Grid>
 </Page>
