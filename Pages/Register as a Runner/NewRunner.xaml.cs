@@ -86,7 +86,7 @@ namespace Marafon.Pages.Runners
 
         private void btn_source_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameApp.frmObj.Navigate(new PageLogin());
         }
 
         private void txb_email_GotFocus(object sender, RoutedEventArgs e)
